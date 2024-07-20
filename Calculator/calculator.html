@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Design</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset id="container">
+            <form name="cal">
+                <input type="text" id="display" name="display" readonly>
+                <br>
+                <input id="clear" class="clear_button" type="button" value="C" onclick="clearDisplay()">
+                <input id="delete" class="delete_button" type="button" value="DEL" onclick="deleteDisplay()">
+                <input class="mathbutton" type="button" value="/" onclick="appendValue('/')">
+                <input class="mathbutton" type="button" value="x" onclick="appendValue('*')">
+                <br>
+                <input class="digitbutton" type="button" value="7" onclick="appendValue('7')">
+                <input class="digitbutton" type="button" value="8" onclick="appendValue('8')">
+                <input class="digitbutton" type="button" value="9" onclick="appendValue('9')">
+                <input class="mathbutton" type="button" value="-" onclick="appendValue('-')">
+                
+                <br>
+                <input class="digitbutton" type="button" value="4" onclick="appendValue('4')">
+                <input class="digitbutton" type="button" value="5" onclick="appendValue('5')">
+                <input class="digitbutton" type="button" value="6" onclick="appendValue('6')">
+
+                <input class="mathbutton" type="button" value="+" onclick="appendValue('+')">
+                
+                <br>
+                <input class="digitbutton" type="button" value="1" onclick="appendValue('1')">
+                <input class="digitbutton" type="button" value="2" onclick="appendValue('2')">
+                <input class="digitbutton" type="button" value="3" onclick="appendValue('3')">
+                <input class="mathbutton" type="button" value="." onclick="appendValue('.')">
+                
+
+                <br>
+                <input class="digitbutton" type="button" value="00" onclick="appendValue('00')">
+                <input class="digitbutton" type="button" value="0" onclick="appendValue('0')">
+                
+                <input class="equalbutton" id="equal" type="button"  value="=" onclick="calculateResult()"></form>
+                
+                
+            </form>
+        </fieldset>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body{
+    background-color: #424242;
+    align-items: center;
+}
+.container{
+    display:flex;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+#container{
+    width: 200px;
+    padding: 8px 8px 20px 8px;
+    margin: 20px auto;
+    background-color: #ABABAB;
+    border-radius: 6px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #c1c1c1;
+    border-left: 2px solid #c1c1c1;
+}
+#display{
+    display: block;
+    margin: 15px auto;
+    height: 42px;
+    width: 174px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border-top: 2px solid #c1c1c1;
+    border-right: 2px solid #c1c1c1;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #FFF;
+    box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
+    font-size: 30px;
+    color: #343232;
+    text-align: right;
+    font-weight: 400;
+    
+}
+.clear_button
+{
+    display: inline-block;
+    margin: 2px 2px 6px 2px;
+    width: 42px;
+    height: 42px;
+    
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.delete_button
+{
+    display: inline-block;
+    margin: 2px 2px 6px 2px;
+    width: 42px;
+    height: 42px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.mathbutton{
+    margin: 2px 2px 6px 2px;
+    color: #FFF;
+    text-shadow: -1px -1px 0px #44006f;
+    background-color: #434343;
+    border-top: 2px solid #c1c1c1;
+    border-right: 2px solid #c1c1c1;
+    border-left: 2px solid #181818;
+    border-bottom: 2px solid #181818;
+    box-shadow: inset 0px 0px 10px #222222, inset 0px -20px 1px #363636;
+    width: 42px;
+    height: 42px;
+}
+.digitbutton{
+    color: #181818;
+    margin: 2px 2px 6px 2px;
+    text-shadow: 1px 1px 0px #fff;
+    background-color: #ebebeb;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #c1c1c1;
+    border-left: 2px solid #c1c1c1;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px #dcdcdc;
+    width: 42px;
+    height: 42px;
+}
+#clear{
+    color: #fff;
+    text-shadow: -1px -1px 0px #44006f;
+    background-color: #d20000;
+    border-top: 2px solid #ff8484;
+    border-right: 2px solid #ff8484;
+    border-bottom: 2px solid #800000;
+    border-left: 2px solid #800000;
+    box-shadow:inset 0px 0px 10px #030303, inset 0px -20px 1px #800000 ;
+}
+#delete{
+    color: #fff;
+    text-shadow: -1px -1px 0px #44006f;
+    background-color: #d20000;
+    border-top: 2px solid #ff8484;
+    border-right: 2px solid #ff8484;
+    border-bottom: 2px solid #800000;
+    border-left: 2px solid #800000;
+    box-shadow:inset 0px 0px 10px #030303, inset 0px -20px 1px #800000 ;
+}
+
+.digitbutton:hover{
+    cursor: pointer;
+    background-color: #c7bfbf;
+    border-top: 2px solid #ccc9c9;
+    border-right: 2px solid #ccc9c9;
+    border-bottom: 2px solid #302e2e;
+    border-left: 2px solid #626060;
+}
+.mathbutton:hover,
+#equal:hover{
+    cursor: pointer;
+    background-color: #2c2b2b;
+    box-shadow: inset 0px 0px 10px #262626, inset 0px -20px 1px #181818;
+}
+#clear:hover,
+#delete:hover{
+    cursor: pointer;
+    background-color: #960505;
+    border-top: 2px solid #ff8484;
+    border-right: 2px solid #f89a9a;
+    border-bottom: 2px solid #800000;
+    border-left: 2px solid #800000;
+    box-shadow:inset 0px 0px 10px #030303, inset 0px -20px 1px #510101 ;
+}
+.equalbutton{
+    margin: 2px 2px 6px 2px;
+    color: #FFF;
+    text-shadow: -1px -1px 0px #44006f;
+    background-color: #434343;
+    border-top: 2px solid #c1c1c1;
+    border-right: 2px solid #c1c1c1;
+    border-left: 2px solid #181818;
+    border-bottom: 2px solid #181818;
+    box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px #363636;
+    width: 93px;
+    height: 42px;
+}
