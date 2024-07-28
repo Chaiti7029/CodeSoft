@@ -1,3 +1,4 @@
+/*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -9,6 +10,8 @@
 html{
     scroll-behavior: smooth;
 }
+
+/* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -23,6 +26,7 @@ html{
     background: #555;
 }
 
+/* all similar content styling codes */
 section{
     padding: 100px 0;
 }
@@ -43,7 +47,37 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
 
+/* navbar styling */
 .navbar{
     position: fixed;
     width: 100%;
@@ -65,10 +99,6 @@ section{
     color: #080808;
     font-size: 35px;
     font-weight: 600;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a{
-    color: #fff;
 }
 .navbar .logo a span{
     color: crimson;
@@ -81,6 +111,9 @@ section{
     list-style: none;
     display: inline-block;
 }
+.navbar.sticky .menu li a{
+    color: #fff;
+}
 .navbar .menu li a{
     display: block;
     color: #080808;
@@ -89,9 +122,6 @@ section{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar.sticky .menu li a{
-    color: #fff;
-}
 .navbar .menu li a:hover{
     color: crimson;
 }
@@ -99,6 +129,7 @@ section{
     color: #fff;
 }
 
+/* menu btn styling */
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -133,6 +164,8 @@ section{
     filter: brightness(90%);
 }
 
+
+/* home section styling */
 .home{
     display: flex;
     background: url("ab.png") no-repeat center;
@@ -183,34 +216,34 @@ section{
     background: none;
 }
 
-
+/* about section styling */
 .about .title::after{
     content: "who i am";
 }
-.left{
+.about .about-content .left{
     width: 45%;
 }
-.left img{
+.about .about-content .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
 }
-.right{
+.about .about-content .right{
     width: 55%;
 }
-.text{
+.about .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.text span{
+.about .about-content .right .text span{
     color: crimson;
 }
-.right p{
+.about .about-content .right p{
     text-align: justify;
 }
-.right a{
+.about .about-content .right a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -222,11 +255,12 @@ section{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.right a:hover{
+.about .about-content .right a:hover{
     color: crimson;
     background: none;
 }
 
+/* skills section styling */
 
 .skills .title::after{
     content: "what i know";
@@ -301,8 +335,7 @@ section{
     width: 70%;
 }
 
-
-
+/* contact section styling */
 .contact .title::after{
     content: "get in touch";
 }
@@ -397,6 +430,7 @@ section{
   color: crimson;
   background: none;
 }
+/* footer section styling */
 footer{
     background: #111;
     padding: 15px 23px;
@@ -412,7 +446,7 @@ footer span a:hover{
 }
 
 
-
+/* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
